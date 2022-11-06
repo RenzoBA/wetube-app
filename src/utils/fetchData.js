@@ -6,7 +6,7 @@ export const getAddress = async () => {
   } = await axios.get(
     "https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation",
     {
-      params: { apikey: "873dbe322aea47f89dcf729dcc8f60e8" },
+      params: { apikey: process.env.REACT_APP_IPLOCATION_API_KEY },
       headers: {
         "X-RapidAPI-Key": "bfc1396a7amsh68efd297b9959eap1b0bd6jsne36f6bf57908",
         "X-RapidAPI-Host":
@@ -27,7 +27,7 @@ export const getData = async (url) => {
         regionCode: regionCode,
       },
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+        "X-RapidAPI-Key": process.env.REACT_APP_YOUTUBEV3_API_KEY,
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     }
