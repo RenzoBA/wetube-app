@@ -98,6 +98,11 @@ a {
   .logo {
     height: 45px;
   }
+
+  .logo:hover {
+    height: 45px;
+  }
+
   .copyright {
     display: none !important;
   }
