@@ -45,12 +45,8 @@ a {
 }
 
 .category-btn:hover {
-  background-color: #c061cb !important;
+  background-color: #c061cb;
   color: white !important;
-}
-
-.category-btn:hover span {
-  color: white;
 }
 
 .feed-title {
@@ -92,9 +88,11 @@ a {
   .category-btn {
     margin: 10px;
   }
-}
 
-@media screen and (max-width: 900px) {
+  .category-btn:hover {
+    background: transparent;
+  }
+
   .logo {
     height: 45px;
   }
