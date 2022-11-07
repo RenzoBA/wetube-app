@@ -8,7 +8,7 @@ export const getAddress = async () => {
     {
       params: { apikey: process.env.REACT_APP_IPLOCATION_API_KEY },
       headers: {
-        "X-RapidAPI-Key": "bfc1396a7amsh68efd297b9959eap1b0bd6jsne36f6bf57908",
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_API_KEY,
         "X-RapidAPI-Host":
           "find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com",
       },
@@ -27,7 +27,7 @@ export const getData = async (url) => {
         regionCode: regionCode,
       },
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_YOUTUBEV3_API_KEY,
+        "X-RapidAPI-Key": process.env.REACT_APP_RAPIDAPI_API_KEY,
         "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
       },
     }
